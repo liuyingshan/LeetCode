@@ -16,8 +16,8 @@ public:
         for (int i=0; i<256; i++)
             isAppeared[i] = false;
 
-		// To maintain a sliding window, in where each characters at most appears
-		// once.
+        // To maintain a sliding window, in where each characters at most appears
+        // once.
         int l = 0, r = 0, result = 0;
         while (r < s.length()) {
             while (isAppeared[s[r]]) {
